@@ -12,6 +12,6 @@ jobs:
               with:
                 dotnet-version: '10.0.x'
             - name: restore dependencies
-              run: dotnet restore
+              run: dotnet restore ./BlinkitGHA/BlinkitGHA.slnx
             - name: build app
-              run: dotnet build --configuration Release --no-restore --no-restore
+              run: dotnet build ./BlinkitGHA/BlinkitGHA.slnx --configuration Release --no-restore
